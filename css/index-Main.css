@@ -1,0 +1,323 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* FOR LITTLE SCREENS */
+@media only screen and (max-width: 900px){
+  body{
+    font-family: 'NK57 Monospace Regular';
+    background-color: #f2f2f2;
+    font-size: 12px;
+  }
+  h1{
+    font-size: 20px;
+  }
+  .topNav {
+    background-color: #f2f2f2;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    color: black;
+    width: 100%;
+  }
+	div.topNav a{
+    flex: 0 0 24%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 1px;
+		padding-right: 1px;
+		font-size: 12px;
+	}
+	.desktopDivider{
+		display: none;
+	}
+	.mobileDivider{
+		display: inline-block;
+	}
+  .aboutText{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40%;
+    text-align: left;
+  }
+  .servicesContent-text{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 80%;
+  }
+  .serviceExample{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .serviceExample-text{
+    display: flex;
+    width: 80%;
+    order: 2;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+  }
+  .serviceExample-image{
+    display: flex;
+    order: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  .teamMembersContainer-Desktop{
+    display: none;
+  }
+  .teamMembersContainer-Mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/* FOR BIG SCREENS */
+@media only screen and (min-width: 901px){
+  body{
+    font-family: 'NK57 Monospace Regular';
+    background-color: #f2f2f2;
+    font-size: 15px;
+  }
+  .topNav {
+    background-color: #f2f2f2;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    color: black;
+  }
+  .mobileDivider{
+		display: none;
+	}
+	.desktopDivider{
+		display: inline-block;
+	}
+	.topNav a{
+		padding: 14px 16px;
+		font-size: 17px;
+	}
+  .aboutText{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20%;
+    text-align: left;
+  }
+  .servicesContainer{
+
+  }
+  .serviceExample{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .servicesContent-image{
+    flex: 1 0 35%;
+    order: 1;
+    margin: 5px;
+  }
+  .servicesContent-text{
+    flex: 1 0 60%;
+    order: 2;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  .serviceExample-image{
+    display: flex;
+    flex: 1 0 20%;
+    order: 1;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .serviceExample-text{
+    flex: 1 0 80%;
+    order: 2;
+    text-align: justify;
+  }
+  .teamMembersContainer-Mobile{
+    display: none;
+  }
+  .teamMembersContainer-Desktop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .teamMembers-Main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+  }
+  .teamMembers-MainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .teamMemberTitle{
+    flex: 2 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .teamMembers-Main{
+    flex: 3 0 0;
+    width: 80%;
+  }
+  .teamMembers-Bios{
+    display: flex;
+    flex: 5 0 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .teamMemberBioInner-Container{
+    color: black;
+  }
+  .teamMemberBio-Rada{
+    display: none;
+    transition: all 100ms ease-in-out;
+    background-color: darkgray;
+    width: 80%;
+    text-align: justify;
+  }
+  .teamMemberBio-Rada.shown{
+    display: block;
+  }
+  .teamMemberBio-Arturo{
+    display: none;
+    transition: all 100ms ease-in-out;
+    background-color: darkgray;
+    width: 80%;
+    text-align: justify;
+  }
+  .teamMemberBio-Arturo.shown{
+    display: block;
+  }
+  .teamMemberBio-Lisa{
+    display: none;
+    transition: all 100ms ease-in-out;
+    background-color: darkgray;
+    width: 80%;
+    text-align: justify;
+  }
+  .teamMemberBio-Lisa.shown{
+    display: block;
+  }
+  .teamMemberBio-Quigly{
+    display: none;
+    transition: all 100ms ease-in-out;
+    background-color: darkgray;
+    width: 80%;
+    text-align: justify;
+  }
+  .teamMemberBio-Quigly.shown{
+    display: block;
+  }
+  .teamMemberBioInner-Container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+  }
+  .showContent{
+    display: block;
+  }
+}
+
+/* THIS IS WHERE THE GLOBAL STUFF STARTS */
+body{
+  font-family: 'NK57 Monospace Regular';
+  color: #464643;
+}
+.melaninAstronaut{
+  width: 100%;
+  height: 100%;
+  background-image: url("../Media/melaninAstronaut.jpg");
+	background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.litList{
+  width: 100%;
+  height: 90%;
+  overflow-y: scroll;
+}
+.scholarships{
+  background-image: url("../Media/ActionShots/RadaQuigly3.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.contactPage{
+  background-image: url("../Media/MelatechLogos/melatechLightSign.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.clear{
+	clear: both;
+}
+.generalPadding{
+	height: 70px;
+}
+
+/* Style the links inside the navigation bar */
+.topNav a {
+  color: #464643;
+	float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Change the color of links on hover */
+.topNav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Add a color to the active/current link */
+.topNav a.active {
+  /*
+  background-color: #e7714e;
+  color: white;
+  */
+}
+.active2{
+  background-color: #e7714e;
+  color: white;
+}
