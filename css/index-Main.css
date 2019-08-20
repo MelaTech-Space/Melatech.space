@@ -47,9 +47,11 @@
     text-align: left;
   }
   .servicesContent-text{
-    padding-left: 10px;
-    padding-right: 10px;
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .serviceExample{
     display: flex;
@@ -81,6 +83,22 @@
     align-items: center;
     width: 100%;
   }
+  .news{
+    text-align:left;
+    width:80%;
+  }
+  .literature{
+    text-align:left;
+    width:80%;
+  }
+  .litList{
+    width: 100%;
+  }
+  .ContactBox{
+    background-color:rgba(242,242,242,0.75);
+    width:60%;
+    margin:auto;
+  }
 }
 
 /* FOR BIG SCREENS */
@@ -88,7 +106,7 @@
   body{
     font-family: 'NK57 Monospace Regular';
     background-color: #f2f2f2;
-    font-size: 15px;
+    font-size: 13px;
   }
   .topNav {
     background-color: #f2f2f2;
@@ -134,9 +152,8 @@
     margin: 5px;
   }
   .servicesContent-text{
-    flex: 1 0 60%;
+    flex: 1 0 65%;
     order: 2;
-    margin: 5px;
     align-items: center;
     justify-content: center;
   }
@@ -242,6 +259,34 @@
     justify-content:center;
     align-items:center;
   }
+  .teamMemberBioInner-SocialMedia{
+    width:50%;
+    order:2;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+  }
+  .news{
+    text-align:left;
+    width:80%;
+    height:40vh;
+  }
+  .literature{
+    height:40vh;
+    text-align:left;
+    width:80%;
+  }
+  .litList{
+    width: 100%;
+    height: 90%;
+    overflow-y: scroll;
+  }
+  .ContactBox{
+    background-color:#f2f2f2;
+    width:20%;
+    margin-left:75%
+  }
   .showContent{
     display: block;
   }
@@ -263,17 +308,12 @@ body{
   align-items: center;
   justify-content: space-around;
 }
-.litList{
-  width: 100%;
-  height: 90%;
-  overflow-y: scroll;
-}
 .scholarships{
   background-image: url("../Media/ActionShots/RadaQuigly3.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  width: 90%;
+  width: 100%;
   height: 90%;
   margin: auto;
   display: flex;
