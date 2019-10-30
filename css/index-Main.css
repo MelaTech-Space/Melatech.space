@@ -189,6 +189,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    height:90%;
   }
   .teamMembers-Main{
     display: flex;
@@ -212,7 +213,7 @@
   }
   .teamMembers-Main{
     flex: 3 0 0;
-    width: 80%;
+    width: 100%;
   }
   .teamMembers-Bios{
     display: flex;
