@@ -322,7 +322,7 @@ body{
 .scholarships{
   background-image: url("../Media/Scholarship.png");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
   background-size: cover;
   width: 100%;
   height: 90%;
